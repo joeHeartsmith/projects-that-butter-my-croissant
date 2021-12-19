@@ -6,7 +6,7 @@
 #include <sys/inotify.h>
 #include <unistd.h>
 
-/* pretty much just ripped-out of the manpage */
+/* pretty much just ripped out of the manpage */
 static void handle_events(int fd, int *wd, int argc, char *argv[]) {
   char buf[4096] __attribute__((aligned(__alignof__(struct inotify_event))));
   const struct inotify_event *event;
