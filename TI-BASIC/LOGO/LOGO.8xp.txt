@@ -1,0 +1,22 @@
+:
+ClrHome:ClrDraw:AxesOff
+For(I,-10,10
+Pt-On(I,1.75,1,BLACK
+If I=-6
+Pt-On(I,1,1,DARKGRAY
+If I=-2
+Pt-On(I,1,1,GRAY
+If I=2
+Pt-On(I,1,1,MEDGRAY
+If I=6
+Pt-On(I,1,1,LTGRAY
+For(J,1,50:End
+Pt-Off(I,1.75,1
+End
+For(I,1,150:End
+TextColor(NAVY
+Text(105,175,"phorPix"
+Text(120,182,"games."
+For(I,1,1500:End
+DelVar I:DelVar J
+AxesOn :ClrDraw:ClrHome
